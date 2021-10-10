@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;
+        }
+        header{
+            background-color: grey;
+            height: 13vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        header p{
+            
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        .banner{
+            height: 88vh;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        .sec2 h1{
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .circle{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            background-color: goldenrod;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        .sec1{
+            justify-content: center;
+            display: flex;
+        }
+        .sec2{
+            margin-bottom: 20px;
+        }
+        .sec2-main-left{
+            background-color: gray;
+            width: 50%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float:left;
+        }
+        .sec2-main-left p{
+            font-size: 40px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            
+        }
+        .article-main{
+            float: right;
+            height: 550px;
+            width: 48.6%;
+            margin-left: auto;
+        }
+        .article{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: orangered;
+            height: 152px;
+            margin-bottom: 20px;
+        }
+        .article p{
+            font-size: 30px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .sec3 h1{
+            background-color: red;
+            text-align: center;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <p>Header</p>
+    </header>
+    <div class="banner">
+    Banner
+    </div>
+    <h1>Section-1</h1>
+    <div class="sec1">
+        
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="sec2">
+        <h1>Section-2</h1>
+        <div class="sec2-box">
+            <div class="sec2-main-left">
+                <p>MAIN</p>
+            </div>
+            <div class="article-main">
+                <div class="article"><p>Article-1</p>
+                </div>
+                <div class="article"><p>Article-2</p></div>
+                <div class="article"><p>Article-3</p></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sec3">
+        <h1>Section-3</h1>
+    </div>
+    
+   
+</body>
+</html>
