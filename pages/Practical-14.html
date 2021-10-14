@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        body{
+            background-color: grey;
+        }
+        h1{
+            margin-top: 1%;
+            color: white;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1%;
+        }
+        .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .minus,.plus{
+            background-color: yellow;
+            padding: 20px;
+            margin: 20px;
+            font-weight: bold;
+        }
+        .button p{
+            color: yellow;
+            padding: 20px;
+            margin: 20px;
+            font-weight: bold;
+            font-size: 20px2;
+        }
+    </style>
+</head>
+<body>
+    <h1>COUNTER</h1>
+    <div class="button">
+        <button class="minus"  onclick="counterMin()">-</button>
+        <p id="number">0</p>
+        <button class="plus" onclick="counterMax()" >+</button>
+    </div>
+</body>
+<script>
+    function counterMin(){
+        var x=document.getElementById('number');
+        var num=parseInt(x.innerText);
+        num--;
+        if(num<0){
+            x.innerText=0;
+            return;   
+        }
+        else if(num==0){
+            var but=document.getElementsByClassName('minus')[0];
+            console.log(but)
+            but.disabled=true;
+        }
+        x.innerText=num.toString();
+    }
+    function counterMax(){
+        var x=document.getElementById('number');
+        var num=parseInt(x.innerText);
+        num++;
+        if(num>0){
+            var but=document.getElementsByClassName('minus')[0];
+            console.log(but)
+            but.disabled=false;
+        }
+        x.innerText=num.toString();
+    }
+</script>
+</html>
